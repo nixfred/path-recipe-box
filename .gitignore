@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+
+# your recipe data stays on your machine
+data/
+app/data/
+reference/data/
+backups/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+
+# secrets and local settings
+.env
+.env.*
+
+# OS and editor noise
+.DS_Store
+*.log
+.idea/
+.vscode/
