@@ -37,19 +37,7 @@ Three things, in this order of importance:
 
 ## Doing it by hand
 
-If you would rather do it yourself, use the GitHub CLI:
-
-```bash
-gh repo create my-recipe-box --template nixfred/path-recipe-box --private --clone
-cd my-recipe-box
-claude
-```
-
-Then say:
-
-> start the recipe box path
-
-Your agent reads `CLAUDE.md`, opens `steps/01-setup.md`, tells you the goal in plain words, and begins.
+Steps: https://how.nixfred.com/recipe-box
 
 ## The journey
 
