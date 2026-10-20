@@ -114,7 +114,7 @@ app/
   package.json
 ```
 
-## How the checks work
+## What your agent runs (so you can audit it)
 
 After each stage your agent runs:
 
@@ -129,8 +129,6 @@ Use `--dir reference` to run the same checks against the answer key:
 ```bash
 bun checks/check.ts 10 --dir reference
 ```
-
-## The answer key
 
 `reference/` is a complete, working version of the app. It exists so the checks can be proven, and so a stuck agent has somewhere to look. The agent is told not to copy from it unless you ask, or it has failed twice. You are free to read it any time you like. To run it:
 
