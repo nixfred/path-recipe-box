@@ -1,3 +1,5 @@
+Start here: https://how.nixfred.com/recipe-box. One paste and your agent does the rest.
+
 <p align="center">
   <img src="assets/banner.svg" alt="Recipe Box, a nixfredOS path" width="100%">
 </p>
@@ -33,19 +35,9 @@ Three things, in this order of importance:
 - **Time.** A few hours, spread over one or two sittings. Each stage stops for you, so you set the pace.
 - **macOS or Linux.** Built for macOS on Apple Silicon and for Omarchy (Arch Linux with Hyprland). Other Linux distributions should work the same way.
 
-## Start here
+## Doing it by hand
 
-```bash
-gh repo create my-recipe-box --template nixfred/path-recipe-box --private --clone
-cd my-recipe-box
-claude
-```
-
-Then say:
-
-> start the recipe box path
-
-Your agent reads `CLAUDE.md`, opens `steps/01-setup.md`, tells you the goal in plain words, and begins.
+Steps: https://how.nixfred.com/recipe-box
 
 ## The journey
 
@@ -122,7 +114,7 @@ app/
   package.json
 ```
 
-## How the checks work
+## What your agent runs (so you can audit it)
 
 After each stage your agent runs:
 
@@ -137,8 +129,6 @@ Use `--dir reference` to run the same checks against the answer key:
 ```bash
 bun checks/check.ts 10 --dir reference
 ```
-
-## The answer key
 
 `reference/` is a complete, working version of the app. It exists so the checks can be proven, and so a stuck agent has somewhere to look. The agent is told not to copy from it unless you ask, or it has failed twice. You are free to read it any time you like. To run it:
 
