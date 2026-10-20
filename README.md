@@ -1,3 +1,5 @@
+Start here: https://how.nixfred.com/recipe-box. One paste and your agent does the rest.
+
 <p align="center">
   <img src="assets/banner.svg" alt="Recipe Box, a nixfredOS path" width="100%">
 </p>
@@ -33,7 +35,9 @@ Three things, in this order of importance:
 - **Time.** A few hours, spread over one or two sittings. Each stage stops for you, so you set the pace.
 - **macOS or Linux.** Built for macOS on Apple Silicon and for Omarchy (Arch Linux with Hyprland). Other Linux distributions should work the same way.
 
-## Start here
+## Doing it by hand
+
+If you would rather do it yourself, use the GitHub CLI:
 
 ```bash
 gh repo create my-recipe-box --template nixfred/path-recipe-box --private --clone
